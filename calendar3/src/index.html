@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="ts/main.ts" type="module"></script>
+</head>
+
+<body class="bg-blue-100">
+
+    <main class="flex items-center justify-center">
+
+        <div class="flex items-center gap-4">
+            <button class="" id="prevMonth">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" height="2rem">
+                    <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                </svg>
+            </button>
+
+
+            <div class="max-w-max p-19 outline-solid outline-slate-300 rounded-xl bg-white">
+                <div class="text-5xl text-slate-600 text-center px-1">
+                    <time id="monthYear"></time>
+                </div>
+                <div class="grid grid-cols-7 mt-12">
+                    <div class="text-base text-slate-400 tracking-widest text-center">Mo</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">Tu</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">We</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">Th</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">Fr</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">Sa</div>
+                    <div class="text-base text-slate-400 tracking-widest text-center">Su</div>
+                </div>
+
+                <div id="dates" class="grid grid-cols-7 m-1"></div>
+
+            </div>
+            <button class="cursor-pointer" id="nextMonth">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="2rem" fill="currentColor">
+                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                </svg>
+            </button>
+
+        </div>
+    </main>
+</body>
+
+</html>

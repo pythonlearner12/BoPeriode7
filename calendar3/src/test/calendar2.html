@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/global.css">
+    <!-- https://codepen.io/zellwk/pen/xNpKwp/ -->
+    <style>
+        /* // Colors used */
+        :root {
+            --teal-100: #c6f7e2;
+            --teal-900: #014d40;
+            --blue-grey-050: #f0f4f8;
+            --blue-grey-100: #d9e2ec;
+            --blue-grey-200: #bcccdc;
+            --blue-grey-400: #829ab1;
+            --blue-grey-600: #486581;
+            --blue-grey-700: #334e68;
+            --blue-grey-900: #102a43;
+        }
+
+        html {
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            color: var(--blue-grey-900);
+        }
+
+        body {
+            background: var(--blue-grey-100);
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calendar {
+            max-width: max-content;
+            padding: 4.8rem;
+            outline: 0.2rem solid var(--blue-grey-200);
+            border-radius: 0.8rem;
+            background-color: #fff;
+        }
+
+        .month-indicator {
+            font-size: 3.2rem;
+            color: var(--blue-grey-700);
+            text-align: center;
+            padding: 0.35rem 0;
+        }
+
+        .day-of-week,
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .day-of-week {
+            margin-top: 3rem;
+        }
+
+        .day-of-week>* {
+            font-size: 1.6rem;
+            color: var(--blue-grey-400);
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+
+        .date-grid {
+            margin-top: 0.25rem;
+        }
+
+        /* Positioning the first day */
+        .date-grid button:first-child {
+            grid-column: 7;
+        }
+
+        .date-grid button {
+            font-size: 1.6rem;
+            padding: 1.4rem;
+            border-radius: 50%;
+            background-color: inherit;
+            color: var(--blue-grey-600);
+            line-height: 1;
+            border: none;
+        }
+
+        .date-grid button:hover,
+        .date-grid button:focus {
+            background-color: var(--blue-grey-050);
+            color: var(--blue-grey-700);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="calendar">
+            <div class="month-indicator">
+                <time datetime="2019-02"> February 2019 </time>
+            </div>
+            <div class="day-of-week">
+                <div>Mo</div>
+                <div>Tu</div>
+                <div>We</div>
+                <div>Th</div>
+                <div>Fr</div>
+                <div>Sa</div>
+                <div>Su</div>
+            </div>
+
+            <div class="date-grid">
+                <button>
+                    <time datetime="2019-02-01">1</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-02">2</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-03">3</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-04">4</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-05">5</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-06">6</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-07">7</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-08">8</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-09">9</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-10">10</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-11">11</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-12">12</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-13">13</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-14">14</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-15">15</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-16">16</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-17">17</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-18">18</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-19">19</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-20">20</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-21">21</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-22">22</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-23">23</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-24">24</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-25">25</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-26">26</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-27">27</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-28">28</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-29">29</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-30">30</time>
+                </button>
+                <button>
+                    <time datetime="2019-02-31">31</time>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
