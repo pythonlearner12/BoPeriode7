@@ -25,7 +25,7 @@ function calendar(monthChange: number = 0): void {
         return `
             <button
             ${gridStart}
-            class="cursor-pointer text-base p-5 rounded-full bg-inherit text-slate-600 border-none hover:bg-slate-100 focus:bg-slate-100" 
+            class="flex items-center justify-center rounded-full cursor-pointer text-base p-5 bg-inherit text-slate-600 border-none hover:bg-slate-100 focus:bg-slate-100" 
             aria-label="Select day ${i + 1}">
                 <time>${i + 1}</time>
             </button>
